@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ImageStream
+metadata:
+  labels:
+    role: jenkins-slave
+  name: nodejs 
+spec:
+  tags:
+  - from:
+      kind: DockerImage
+      name: docker.io/bejens/jenkins-slave-nodejs:8.16.1
+    name: latest
