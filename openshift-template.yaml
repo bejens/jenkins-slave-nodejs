@@ -3,7 +3,7 @@ kind: ImageStream
 metadata:
   labels:
     role: jenkins-slave
-  name: nodejs 
+  name: nodejs
 spec:
   tags:
   - from:
