@@ -3,10 +3,10 @@ kind: ImageStream
 metadata:
   labels:
     role: jenkins-slave
-  name: jenkins-nodejs-8
+  name: jenkins-nodejs
 spec:
   tags:
   - from:
       kind: DockerImage
       name: docker.io/bejens/jenkins-slave-nodejs:8.16.1
-    name: latest
+    name: "8.16.1"
